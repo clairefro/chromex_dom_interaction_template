@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Text Highlighter",
+  "description": "You better replace me someday",
+  "version": "0.0.0",
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "service.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

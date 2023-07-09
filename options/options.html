@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Extension Options</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      .option-label {
+        font-weight: bold;
+      }
+
+      .option-input {
+        margin-bottom: 10px;
+      }
+
+      .save-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .save-button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Extension Options</h1>
+
+    <div>
+      <label for="option1" class="option-label">Option 1:</label>
+      <input type="checkbox" id="option1" class="option-input" />
+    </div>
+
+    <div>
+      <label for="option2" class="option-label">Option 2:</label>
+      <input type="text" id="option2" class="option-input" />
+    </div>
+
+    <button id="saveButton" class="save-button">Save</button>
+
+    <script src="options.js"></script>
+  </body>
+</html>
