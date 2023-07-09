@@ -17,5 +17,11 @@
       "matches": ["*://*/*"],
       "js": ["content.js"]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["resources/*"],
+      "matches": ["*://*/*"]
+    }
   ]
 }

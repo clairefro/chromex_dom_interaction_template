@@ -28,6 +28,9 @@
         cursor: pointer;
         border-radius: 4px;
       }
+      .save-button:disabled {
+        background-color: gray;
+      }
 
       .save-button:hover {
         background-color: #45a049;
@@ -38,16 +41,17 @@
     <h1>Extension Options</h1>
 
     <div>
-      <label for="option1" class="option-label">Option 1:</label>
+      <label for="option1" class="option-label">Check me:</label>
       <input type="checkbox" id="option1" class="option-input" />
     </div>
 
     <div>
-      <label for="option2" class="option-label">Option 2:</label>
-      <input type="text" id="option2" class="option-input" />
+      <label for="option2" class="option-label">Highlight Color:</label>
+      <input type="color" id="option2" />
     </div>
 
     <button id="saveButton" class="save-button">Save</button>
+    <span id="status"></span>
 
     <script src="options.js"></script>
   </body>
